@@ -31,9 +31,10 @@ def display_main_menu():
     elif chosen_menu == '2':
         print('you choose 2')
     elif chosen_menu == '3':
-        print('you choose 3')
+        print('thank you!'.upper())
+        exit()
     else:
         input('invalid input, enter any key to return')
         display_main_menu()
-        
+
 display_main_menu()
