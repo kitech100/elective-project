@@ -78,13 +78,13 @@ def choose_algorithm():
     chosen_algo = input('input: ')
 
     if chosen_algo == 'a':
-        print('you choose a')
+        display_classification_algorithm()
     elif chosen_algo == 'b':
-        print('you choose b')
+        display_regression_algorithm()
     elif chosen_algo == 'c':
-        print('you choose c')
+        display_clustering_algorithm()
     elif chosen_algo == 'd':
-        print('you choose d')
+        display_KNN_algorithm()
     elif chosen_algo == 'e':
         display_main_menu()
     else:
@@ -95,10 +95,38 @@ def choose_algorithm():
 
 def display_classification_algorithm():
     os.system('cls')
-    printVerticalSpaces(2)
+    printVerticalSpaces(1)
     algo = algorithms['classification']
-    title = algo["title"]+" algorithm".upper()
+    title = (algo["title"]+" algorithm").upper()
     print(title)
+    input('\nenter any key to return...')
+    choose_algorithm()
 
-# display_main_menu()
-display_classification_algorithm()
+def display_regression_algorithm():
+    os.system('cls')
+    printVerticalSpaces(1)
+    algo = algorithms['regression']
+    title = (algo["title"]+" algorithm").upper()
+    print(title)
+    input('\nenter any key to return...')
+    choose_algorithm()
+
+def display_clustering_algorithm():
+    os.system('cls')
+    printVerticalSpaces(1)
+    algo = algorithms['clustering']
+    title = (algo["title"]+" algorithm").upper()
+    print(title)
+    input('\nenter any key to return...')
+    choose_algorithm()
+
+def display_KNN_algorithm():
+    os.system('cls')
+    printVerticalSpaces(1)
+    algo = algorithms['KNN']
+    title = (algo["title"]+" algorithm").upper()
+    print(title)
+    input('\nenter any key to return...')
+    choose_algorithm()
+
+display_main_menu()
