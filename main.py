@@ -1,5 +1,20 @@
 import os
 
+algorithms = {
+    "classification": {
+        "title": "classification"
+    },
+    "regression": {
+        "title": "regression"
+    },
+    "clustering": {
+        "title": "clustering"
+    },
+    "KNN": {
+        "title": "KNN"
+    },
+}
+
 def printSpaces(n):
     for x in range(n):
         print()
@@ -27,7 +42,7 @@ def display_main_menu():
     chosen_menu = input('input: ')
 
     if chosen_menu == '1':
-        print('you choose 1')
+       display_all_algorithm()
     elif chosen_menu == '2':
         print('you choose 2')
     elif chosen_menu == '3':
@@ -36,5 +51,13 @@ def display_main_menu():
     else:
         input('invalid input, enter any key to return')
         display_main_menu()
+
+def display_all_algorithm():
+    os.system('cls')
+    printSpaces(2)
+    print('ML Algorithms'.upper())
+    printSpaces(1)
+    input()
+    display_main_menu()
 
 display_main_menu()
