@@ -15,29 +15,29 @@ algorithms = {
     },
 }
 
-def printSpaces(n):
+def printVerticalSpaces(n):
     for x in range(n):
         print()
 
 def display_main_menu():
     os.system("cls")
 
-    printSpaces(2)
+    printVerticalSpaces(2)
     print('ML Regents'.upper())
-    printSpaces(1)
+    printVerticalSpaces(1)
 
     print('Members:')
     print('\tEchemane, Eric B.')
     print('\tBautista, Mark Alcel C.')
 
-    printSpaces(1)
+    printVerticalSpaces(1)
 
     print('Main menu:')
     print('\t[1] Choose ML Algorithm to display')
     print('\t[2] Display all ML Algorithm')
     print('\t[3] Exit')
 
-    printSpaces(1)
+    printVerticalSpaces(1)
 
     chosen_menu = input('input: ')
 
@@ -54,9 +54,9 @@ def display_main_menu():
 
 def display_all_algorithm():
     os.system('cls')
-    printSpaces(2)
+    printVerticalSpaces(2)
     print('ML Algorithms'.upper())
-    printSpaces(1)
+    printVerticalSpaces(1)
 
     for key,algo in algorithms.items():
         print(algo['title'].upper())
@@ -66,13 +66,14 @@ def display_all_algorithm():
 
 def choose_algorithm():
     os.system('cls')
-    printSpaces(2)
+    printVerticalSpaces(2)
     print('Choose algorithm to display:'.upper())
     
     print('\t[a] Classification Algorithm')
     print('\t[b] Regression Algorithm')
     print('\t[c] Clustering Algorithm')
     print('\t[d] KNN Algorithm')
+    print('\t[e] Main menu')
 
     chosen_algo = input('input: ')
 
@@ -84,6 +85,8 @@ def choose_algorithm():
         print('you choose c')
     elif chosen_algo == 'd':
         print('you choose d')
+    elif chosen_algo == 'e':
+        display_main_menu()
     else:
         print('invalid input\n')
 
