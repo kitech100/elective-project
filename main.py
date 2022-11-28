@@ -70,8 +70,10 @@ def display_all_algorithm():
     print('ML Algorithms'.upper())
     printVerticalSpaces(1)
 
-    for key,algo in algorithms.items():
-        print(algo['title'].upper())
+    display_classification_algorithm(clear_the_screen=False)
+    display_regression_algorithm(clear_the_screen=False)
+    display_clustering_algorithm(clear_the_screen=False)
+    display_KNN_algorithm(clear_the_screen=False)
 
     input('\nenter any key to return...')
     display_main_menu()
@@ -107,8 +109,9 @@ def choose_algorithm():
     
 #  ================================= Algorithms ==================================
 
-def display_classification_algorithm():
-    os.system('cls')
+def display_classification_algorithm(clear_the_screen = True):
+    if clear_the_screen:
+        os.system('cls')
     printVerticalSpaces(1)
     algo = algorithms['classification']
     title = (algo["title"]+" algorithm").upper()
@@ -130,11 +133,13 @@ def display_classification_algorithm():
     print('•  ⁄')
     print('• • • • • • • • • • • • • • • • • • >')
     
-    input('\nenter any key to return...')
-    choose_algorithm()
+    if clear_the_screen:
+        input('\nenter any key to return...')
+        choose_algorithm()
 
-def display_regression_algorithm():
-    os.system('cls')
+def display_regression_algorithm(clear_the_screen = True):
+    if clear_the_screen:
+        os.system('cls')
     printVerticalSpaces(1)
     algo = algorithms['regression']
     title = (algo["title"]+" algorithm").upper()
@@ -156,11 +161,13 @@ def display_regression_algorithm():
     print('• ⁄                                   ')
     print('• • • • • • • • • • • • • • • • • • >')
 
-    input('\nenter any key to return...')
-    choose_algorithm()
+    if clear_the_screen:
+        input('\nenter any key to return...')
+        choose_algorithm()
 
-def display_clustering_algorithm():
-    os.system('cls')
+def display_clustering_algorithm(clear_the_screen = True):
+    if clear_the_screen:
+        os.system('cls')
     printVerticalSpaces(1)
     algo = algorithms['clustering']
     title = (algo["title"]+" algorithm").upper()
@@ -181,11 +188,13 @@ def display_clustering_algorithm():
     print('• 🟣🟣')
     print('• • • • • • • • • • • • • • • • • • >')
 
-    input('\nenter any key to return...')
-    choose_algorithm()
+    if clear_the_screen:
+        input('\nenter any key to return...')
+        choose_algorithm()
 
-def display_KNN_algorithm():
-    os.system('cls')
+def display_KNN_algorithm(clear_the_screen = True):
+    if clear_the_screen:
+        os.system('cls')
     printVerticalSpaces(1)
     algo = algorithms['KNN']
     title = (algo["title"]+" algorithm").upper()
@@ -206,11 +215,8 @@ def display_KNN_algorithm():
     print('• 🟣🟣 class C')
     print('• • • • • • • • • • • • • • • • • • >')
 
-    input('\nenter any key to return...')
-    choose_algorithm()
+    if clear_the_screen:
+        input('\nenter any key to return...')
+        choose_algorithm()
 
 display_main_menu()
-# display_classification_algorithm()
-# display_regression_algorithm()
-# display_clustering_algorithm()
-# display_KNN_algorithm()
