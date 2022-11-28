@@ -141,6 +141,21 @@ def display_regression_algorithm():
     print(title)
     print(algo["description"])
 
+    print('^')
+    print('•         °     ⁄')
+    print('•      °              ⁄')
+    print('• ° °    °  °    ⁄  °')
+    print('•   °   °        ⁄  °  °    °')
+    print('•       °   °  ⁄   °   °  ° ')
+    print('• °   °      ⁄   °  ° ')
+    print('• °  °     ⁄  °  ')
+    print('• °       ⁄  °')
+    print('•   °   ⁄   ° ° ° ')
+    print('•      ⁄  °')
+    print('•    ⁄ °')
+    print('•  ⁄')
+    print('• • • • • • • • • • • • • • • • • • >')
+
     input('\nenter any key to return...')
     choose_algorithm()
 
@@ -167,4 +182,5 @@ def display_KNN_algorithm():
     choose_algorithm()
 
 # display_main_menu()
-display_classification_algorithm()
+# display_classification_algorithm()
+display_regression_algorithm()
