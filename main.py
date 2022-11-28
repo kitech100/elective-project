@@ -114,6 +114,8 @@ def display_classification_algorithm():
     title = (algo["title"]+" algorithm").upper()
     print(title)
     print(algo["description"])
+
+    print('⬆️')
     
     input('\nenter any key to return...')
     choose_algorithm()
@@ -151,5 +153,5 @@ def display_KNN_algorithm():
     input('\nenter any key to return...')
     choose_algorithm()
 
-display_main_menu()
-# os.system('classification.png')
+# display_main_menu()
+display_classification_algorithm()
