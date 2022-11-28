@@ -42,14 +42,14 @@ def display_main_menu():
     chosen_menu = input('input: ')
 
     if chosen_menu == '1':
-       display_all_algorithm()
+        print('you choose 1')
     elif chosen_menu == '2':
-        print('you choose 2')
+        display_all_algorithm()
     elif chosen_menu == '3':
         print('thank you!'.upper())
         exit()
     else:
-        input('invalid input, enter any key to return')
+        input('invalid input, enter any key to return...')
         display_main_menu()
 
 def display_all_algorithm():
@@ -57,7 +57,11 @@ def display_all_algorithm():
     printSpaces(2)
     print('ML Algorithms'.upper())
     printSpaces(1)
-    input()
+
+    for key,algo in algorithms.items():
+        print(algo['title'].upper())
+
+    input('\nenter any key to return...')
     display_main_menu()
 
 display_main_menu()
