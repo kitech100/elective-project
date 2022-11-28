@@ -73,7 +73,7 @@ def choose_algorithm():
     print('\t[b] Regression Algorithm')
     print('\t[c] Clustering Algorithm')
     print('\t[d] KNN Algorithm')
-    print('\t[e] Main menu')
+    print('\t[e] go back to main menu')
 
     chosen_algo = input('input: ')
 
