@@ -93,4 +93,12 @@ def choose_algorithm():
     input('\nenter any key to return...')
     choose_algorithm()
 
-display_main_menu()
+def display_classification_algorithm():
+    os.system('cls')
+    printVerticalSpaces(2)
+    algo = algorithms['classification']
+    title = algo["title"]+" algorithm".upper()
+    print(title)
+
+# display_main_menu()
+display_classification_algorithm()
