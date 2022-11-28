@@ -42,7 +42,7 @@ def display_main_menu():
     chosen_menu = input('input: ')
 
     if chosen_menu == '1':
-        print('you choose 1')
+        choose_algorithm()
     elif chosen_menu == '2':
         display_all_algorithm()
     elif chosen_menu == '3':
@@ -63,5 +63,31 @@ def display_all_algorithm():
 
     input('\nenter any key to return...')
     display_main_menu()
+
+def choose_algorithm():
+    os.system('cls')
+    printSpaces(2)
+    print('Choose algorithm to display:'.upper())
+    
+    print('\t[a] Classification Algorithm')
+    print('\t[b] Regression Algorithm')
+    print('\t[c] Clustering Algorithm')
+    print('\t[d] KNN Algorithm')
+
+    chosen_algo = input('input: ')
+
+    if chosen_algo == 'a':
+        print('you choose a')
+    elif chosen_algo == 'b':
+        print('you choose b')
+    elif chosen_algo == 'c':
+        print('you choose c')
+    elif chosen_algo == 'd':
+        print('you choose d')
+    else:
+        print('invalid input\n')
+
+    input('\nenter any key to return...')
+    choose_algorithm()
 
 display_main_menu()
