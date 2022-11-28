@@ -167,6 +167,20 @@ def display_clustering_algorithm():
     print(title)
     print(algo["description"])
 
+    print('^')
+    print('• 🟢          .       🔴 🔴 ')
+    print('•🟢🟢🟢🟢    .    🔴 🔴🔴 🔴 🔴🔴')
+    print('• 🟢 🟢🟢🟢  . 🔴 🔴🔴 🔴 🔴🔴🔴🔴')
+    print('• 🟢🟢 🟢🟢  .   🔴 🔴 🔴🔴🔴  🔴')
+    print('•🟢🟢 🟢     .   🔴🔴🔴🔴🔴🔴')
+    print('•🟢 🟢    .     .    🔴🔴  🔴🔴')
+    print('•      .    🟣     .      🔴')
+    print('•  .  🟣🟣🟣        .')    
+    print('•🟣🟣🟣🟣🟣🟣🟣      . ')
+    print('• 🟣 🟣🟣🟣🟣')
+    print('• 🟣🟣')
+    print('• • • • • • • • • • • • • • • • • • >')
+
     input('\nenter any key to return...')
     choose_algorithm()
 
@@ -183,4 +197,5 @@ def display_KNN_algorithm():
 
 # display_main_menu()
 # display_classification_algorithm()
-display_regression_algorithm()
+# display_regression_algorithm()
+display_clustering_algorithm()
